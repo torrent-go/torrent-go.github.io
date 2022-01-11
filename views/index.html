@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>${this.escapeHtml(this.title)}</title>
+    ${this.load('/partials/head.html')}
+  </head>
+  <body>
+    ${this.load('/partials/header.html')}
+    <main>
+      <hr>
+      <section>
+        <header>
+          <h2>Simple, reusable components</h2>
+          <p>For a clean looking design that doesn't get in the way</p>
+          <video id="vid" controls></video>
+        </header>
+        <aside>
+          <img alt="HTML only" src="./img/html.svg" height="150">
+          <h3>HTML and You're Done</h3>
+          <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
+            conventions.</p>
+          <p><a href="https://www.w3schools.com/TAGS/ref_byfunc.asp" target="_blank"><em>HTML Guide
+            &nearr;</em></a></p>
+        </aside>
+        <aside>
+          <img alt="Mobile friendly" src="./img/mobile.svg" height="150">
+          <h3>Mobile-friendly UI</h3>
+          <p>MVP is designed to look great on all browsers and devices out of the box for rapid prototyping.
+          </p>
+          <p>It's like an amped up CSS reset that you can toss into any project to get decent styling.</p>
+        </aside>
+        <aside>
+          <img alt="MIT license" src="./img/license.svg" height="150">
+          <h3>MIT License</h3>
+          <p>MVP is released under the permissive MIT license so you can freely use it however you'd like.</p>
+          <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+        </aside>
+      </section>
+      <hr>
+      <section id="testimonials">
+        <blockquote>
+          <img alt="Quote" src="/img/icon-quote.svg" height="80"><br>
+          "It's supercharged and fast, it dose everything WebTorrent dose and <u>more</u> with less resources."
+          <footer><img alt="MVP.css" src="https://andybrewer.github.io/mvp/img/brand.png" height="36"><br><br><i>- Jimmy Wärting, Author of
+            Torrent GO</i></footer>
+        </blockquote>
+      </section>
+      <hr>
+      <section id="features">
+        <header>
+          <h2>How dose it compare to other <b>web</b> clients?</h2>
+          <p>What can do what?</p>
+        </header>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Torrent GO</th>
+              <th>WebTorrent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Can run in worker threads</td>
+              <td><b>&#10003;</b></td>
+              <td>&empty;</td>
+            </tr>
+            <tr>
+              <td>Renders media using</td>
+              <td><b><abbr title="&lt;video src=url&gt;">src</abbr></b></td>
+              <td><abbr title="Media Source Extensions">mse</abbr></td>
+            </tr>
+            <tr>
+              <td>Runs fine on low end devices</td>
+              <td><b>&#10003;</b></td>
+              <td>&empty;</td>
+            </tr>
+            <tr>
+              <td>DHT over WebRTC</td>
+              <td><b>&empty;</b></td>
+              <td>&empty;</td>
+            </tr>
+            <tr>
+              <td>UDP/TCP peers</td>
+              <td><b>&empty;</b></td>
+              <td>&empty;</td>
+            </tr>
+            <tr>
+              <td>WebRTC peers</td>
+              <td><b>&#10003;</b></td>
+              <td>&#10003;</td>
+            </tr>
+            <tr>
+              <td>Size (minified)</td>
+              <td>~100 KiB</td>
+              <td>~875 KiB</td>
+            </tr>
+            <tr>
+              <td>Downloads when page is invisible</td>
+              <td><b>&#10003;</b></td>
+              <td>&empty;</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr>
+      <div id="figure">
+        <header>
+          <h2>A decent MVP in no time</h2>
+          <p>More building and less designing with "set and forget" styling.</p>
+        </header>
+        <figure>
+          <img alt="Stock photo" src="./img/stock.jpg">
+          <figcaption><i>"Uber for X" brainstorming session</i></figcaption>
+        </figure>
+      </div>
+    </main>
+    ${this.load('/partials/footer.html')}
+    <script type="module" src="/js/lightpeer.js"></script>
+  </body>
+</html>
